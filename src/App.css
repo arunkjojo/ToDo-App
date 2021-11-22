@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5a2;
+}
+.image-style{
+  padding-left: 48%;
+  padding-right: 25%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.app-name{
+  padding-left: 46%;
+  color: rgb(18, 82, 155);
+}
+.headerDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerDiv .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addButton {
+  padding-left: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  /* border-left: 1px solid rgba(255, 255, 255, 0.472); */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: rgba(109, 107, 107, 0.575); */
+}
+
+.headerDiv .input {
+  margin-top: 0.8em;
+  width: 100%;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  /* padding: 50px; */
+  justify-content: center;
+}
+
+.headerDiv .input input {
+  width: 100%;
+  height: 1.6em;
+  border-color: transparent;
+  outline-color: transparent;
+}
+.todoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todos_box {
+  width: 250px;
+  min-height: 250px;
+  margin: 25px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+}
+/* active todos section */
+.activeTodos {
+  background: #d3f3fb;
+  justify-content: center;
+}
+/* completed todos section */
+.completedTodos {
+  background: #aff69e;
+}
+/* removed todos section */
+.removedTodos {
+  background: #fad8d8;
+}
+.checkbox {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.todosInput {
+  width: 100%;
+  height: 10px;
+  margin-top: 20px;
+  outline: none;
+  background: #ffffff;
+  box-shadow: inset 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  font-weight: 300;
+  font-family: -headerDivle-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.todoTitle {
+  font-family: -headerDivle-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.41);
+  height: 30px;
+}
+
+/* Common */
+.todos {
+  /* background: #f8f8f8; */
+  margin-top: 40px;
+}
+.todo {
+  width: 210px;
+  min-height: 10px;
+  margin-top: 15px;
+  padding: 15px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f8;
+}
+.todoItem {
+  margin: 0px 10px;
+  width: 100%;
+  font-family: -headerDivle-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+}
+.closeButton {
+  padding-left: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+.delete {
+  color: red;
+  font-size: 11px;
+  padding: 5px;
+  margin-right: -5px;
+}
+
+/* developer info section */
+.developer-info {
+  float: right;
+  font-family: -headerDivle-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  margin-right: 50px;
+}
+.developer-info p {
+  color: rgba(63, 63, 63, 0.4);
+}
+.developer-info p a {
+  color: rgba(251, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 880px) {
+  .image-style{
+    padding-left: 40%;
+    padding-right: 25%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .app-name{
+    padding-left: 35%;
+    color: rgb(18, 82, 155);
+  }
+  .headerDiv {
+    position: center;
+    /* top: 0%; */
+    /* left: 50%; */
+  }
+
+  .headerDiv .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addButton {
+    padding-left: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: normal;
+    /* border-left: 1px solid rgba(255, 255, 255, 0.472); */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(61, 61, 61, 0.795);
+  }
+
+  .headerDiv .input {
+    margin-top: 0.8em;
+    width: 100%;
+    height: 2em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 50px;
+  }
+
+  .headerDiv .input input {
+    width: 100%;
+    height: 1.6em;
+    border-color: transparent;
+    outline-color: transparent;
+  }
+  .todoDiv {
+    padding-top: 2px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .todos_box {
+    width: 100%;
+    min-height: 0px;
+    margin: 0px;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .todo {
+    width: 100%;
+    min-height: 40px;
+    margin-top: 15px;
+    padding: 0px;
+  }
+  .todoTitle {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.41);
+    height: 10px;
+  }
+  .checkbox {
+    margin-left: 20px;
+  }
+  .closeButton {
+    margin-right: 20px;
+  }
+  .todoItem {
+    margin: 10px 20px;
+  }
+  .developer-info p {
+    color: rgba(92, 92, 92, 0.644);
+  }
+}
